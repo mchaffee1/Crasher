@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var btnDoSomething: UIButton?
+    
+    @IBOutlet weak var lblSomething: UILabel?
+    
+    private var something: Int = 0 {
+        didSet {
+            lblSomething?.text = String(something)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func btnDoSomething_touchUpInside(_ sender: Any) {
+        something += 1
     }
-
+    
+    
 
 }
 
