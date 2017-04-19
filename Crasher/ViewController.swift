@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Crasher
-//
-//  Created by Michael Chaffee on 4/19/17.
-//  Copyright © 2017 chaf. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
