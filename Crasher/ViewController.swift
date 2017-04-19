@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
     
     func crash() {
-        var i: Int!
+        let i: Int! = nil
         print(i.description)
     }
 
