@@ -24,7 +24,14 @@ class ViewController: UIViewController {
         something += 1
     }
     
+    @IBAction func btnCrash_touchUpInside(_ sender: Any) {
+        crash()
+    }
     
+    func crash() {
+        var i: Int!
+        print(i.description)
+    }
 
 }
 
