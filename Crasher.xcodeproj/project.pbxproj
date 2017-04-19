@@ -11,7 +11,6 @@
 		2BFF9F531EA7FCD8002CFBED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF9F521EA7FCD8002CFBED /* ViewController.swift */; };
 		2BFF9F561EA7FCD8002CFBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF9F541EA7FCD8002CFBED /* Main.storyboard */; };
 		2BFF9F581EA7FCD8002CFBED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF9F571EA7FCD8002CFBED /* Assets.xcassets */; };
-		2BFF9F5B1EA7FCD8002CFBED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF9F591EA7FCD8002CFBED /* LaunchScreen.storyboard */; };
 		2BFF9F661EA7FCD8002CFBED /* CrasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF9F651EA7FCD8002CFBED /* CrasherTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		2BFF9F521EA7FCD8002CFBED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BFF9F551EA7FCD8002CFBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BFF9F571EA7FCD8002CFBED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2BFF9F5A1EA7FCD8002CFBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BFF9F5C1EA7FCD8002CFBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BFF9F611EA7FCD8002CFBED /* CrasherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrasherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFF9F651EA7FCD8002CFBED /* CrasherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrasherTests.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				2BFF9F521EA7FCD8002CFBED /* ViewController.swift */,
 				2BFF9F541EA7FCD8002CFBED /* Main.storyboard */,
 				2BFF9F571EA7FCD8002CFBED /* Assets.xcassets */,
-				2BFF9F591EA7FCD8002CFBED /* LaunchScreen.storyboard */,
 				2BFF9F5C1EA7FCD8002CFBED /* Info.plist */,
 			);
 			path = Crasher;
@@ -181,7 +178,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BFF9F5B1EA7FCD8002CFBED /* LaunchScreen.storyboard in Resources */,
 				2BFF9F581EA7FCD8002CFBED /* Assets.xcassets in Resources */,
 				2BFF9F561EA7FCD8002CFBED /* Main.storyboard in Resources */,
 			);
@@ -231,14 +227,6 @@
 				2BFF9F551EA7FCD8002CFBED /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2BFF9F591EA7FCD8002CFBED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BFF9F5A1EA7FCD8002CFBED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,6 +402,7 @@
 				2BFF9F6C1EA7FCD8002CFBED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BFF9F6D1EA7FCD8002CFBED /* Build configuration list for PBXNativeTarget "CrasherTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +411,7 @@
 				2BFF9F6F1EA7FCD8002CFBED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
