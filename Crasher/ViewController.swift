@@ -1,4 +1,5 @@
 import UIKit
+import Crashlytics
 
 class ViewController: UIViewController {
 
@@ -9,6 +10,7 @@ class ViewController: UIViewController {
     private var something: Int = 0 {
         didSet {
             lblSomething?.text = String(something)
+            Crashlytics.sharedInstance().setIntValue(Int32(something), forKey: "something")
         }
     }
     

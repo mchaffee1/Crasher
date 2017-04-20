@@ -21,19 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6u-lA-em5">
-                                <rect key="frame" x="138" y="28" width="98" height="30"/>
-                                <state key="normal" title="Do Something"/>
-                                <connections>
-                                    <action selector="btnDoSomething_touchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYM-bU-OT4"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3R-JI-OrA">
-                                <rect key="frame" x="182" y="66" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdq-gJ-rfF">
                                 <rect key="frame" x="162" y="318" width="51" height="30"/>
                                 <state key="normal" title="CRASH">
@@ -43,11 +30,24 @@
                                     <action selector="btnCrash_touchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6MN-V0-w7q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6u-lA-em5">
+                                <rect key="frame" x="138" y="97" width="98" height="30"/>
+                                <state key="normal" title="Do Something"/>
+                                <connections>
+                                    <action selector="btnDoSomething_touchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYM-bU-OT4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3R-JI-OrA">
+                                <rect key="frame" x="182" y="135" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="e6u-lA-em5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B12-24-6im"/>
-                            <constraint firstItem="e6u-lA-em5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ExR-ZG-7rd"/>
+                            <constraint firstItem="e6u-lA-em5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="ExR-ZG-7rd"/>
                             <constraint firstItem="Jdq-gJ-rfF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NwK-Ov-JUX"/>
                             <constraint firstItem="Jdq-gJ-rfF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pbf-15-VQO"/>
                             <constraint firstItem="z3R-JI-OrA" firstAttribute="top" secondItem="e6u-lA-em5" secondAttribute="bottom" constant="8" id="xaP-C0-2d9"/>
