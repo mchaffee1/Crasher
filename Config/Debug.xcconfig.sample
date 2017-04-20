@@ -1,0 +1,8 @@
+// 1) Copy this file to Debug.xcconfig
+// 2) Populate api key and build secret
+// 3) Build!
+
+#include "Pods/Target Support Files/Pods-Crasher/Pods-Crasher.debug.xcconfig"
+
+FABRIC_API_KEY = <your fabric api key>
+FABRIC_BUILD_SECRET = <your fabric build secret>
