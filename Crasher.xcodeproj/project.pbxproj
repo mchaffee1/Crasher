@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB8D53A1EA900E00060FDA8 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2BB8D5391EA900E00060FDA8 /* Debug.xcconfig */; };
 		2BFF9F511EA7FCD8002CFBED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF9F501EA7FCD8002CFBED /* AppDelegate.swift */; };
 		2BFF9F531EA7FCD8002CFBED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF9F521EA7FCD8002CFBED /* ViewController.swift */; };
 		2BFF9F561EA7FCD8002CFBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF9F541EA7FCD8002CFBED /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BB8D5391EA900E00060FDA8 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2BFF9F4D1EA7FCD8002CFBED /* Crasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFF9F501EA7FCD8002CFBED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BFF9F521EA7FCD8002CFBED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,9 +75,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2BB8D5381EA900E00060FDA8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2BB8D5391EA900E00060FDA8 /* Debug.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		2BFF9F441EA7FCD8002CFBED = {
 			isa = PBXGroup;
 			children = (
+				2BB8D5381EA900E00060FDA8 /* Config */,
 				2BFF9F4F1EA7FCD8002CFBED /* Crasher */,
 				2BFF9F641EA7FCD8002CFBED /* CrasherTests */,
 				2BFF9F4E1EA7FCD8002CFBED /* Products */,
@@ -138,6 +149,7 @@
 				2BFF9F4B1EA7FCD8002CFBED /* Resources */,
 				0A14D669A6933852BA92022C /* [CP] Embed Pods Frameworks */,
 				11EF1F6E11B62FAD0DC3A3EC /* [CP] Copy Pods Resources */,
+				2BFF9F701EA80711002CFBED /* Run Fabric Script */,
 			);
 			buildRules = (
 			);
@@ -218,6 +230,7 @@
 			files = (
 				2BFF9F581EA7FCD8002CFBED /* Assets.xcassets in Resources */,
 				2BFF9F561EA7FCD8002CFBED /* Main.storyboard in Resources */,
+				2BB8D53A1EA900E00060FDA8 /* Debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crasher/Pods-Crasher-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2BFF9F701EA80711002CFBED /* Run Fabric Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Fabric Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ${FABRIC_API_KEY} ${FABRIC_BUILD_SECRET} ";
 		};
 		472159B1FC746444B168A6AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -387,7 +414,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -460,11 +487,13 @@
 		};
 		2BFF9F6B1EA7FCD8002CFBED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC5639544A73394D4A6855EB /* Pods-Crasher.debug.xcconfig */;
+			baseConfigurationReference = 2BB8D5391EA900E00060FDA8 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = H7TG4MJ93Z;
 				INFOPLIST_FILE = Crasher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chaf.Crasher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,8 +506,10 @@
 			baseConfigurationReference = 837630A18C004198696EEDB1 /* Pods-Crasher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = H7TG4MJ93Z;
 				INFOPLIST_FILE = Crasher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chaf.Crasher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
